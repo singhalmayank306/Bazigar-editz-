@@ -7,14 +7,19 @@
 
 <title>BAZIGAR EDITZ | Gaming Edits</title>
 
-<meta name="description" content="BAZIGAR EDITZ — cinematic gaming edits, montages and collaborations.">
-<meta name="keywords" content="Bazigar Editz, Free Fire edits, gaming edits, Free Fire montages">
+<meta name="description" content="BAZIGAR EDITZ — cinematic gaming edits, Free Fire montages, gaming videos and collaborations.">
+<meta name="keywords" content="Bazigar Editz, Free Fire edits, gaming edits, Free Fire montages, gaming videos">
 <meta name="author" content="Mayank Agrawal">
 <meta name="robots" content="index, follow">
 
-
 <style>
-  /* Smooth page animation */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* =========================
+   ANIMATIONS
+========================= */
+
 body {
   animation: pageLoad 0.8s ease-out;
 }
@@ -30,106 +35,877 @@ body {
   }
 }
 
-/* Button and link animation */
-a,
-button {
-  transition: transform 0.25s ease, opacity 0.25s ease;
+/* Scroll reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-a:hover,
-button:hover {
-  transform: translateY(-3px);
-  opacity: 0.85;
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
-:root{--red:#ff2020;--red2:#a90000;--bg:#030303;--card:#0b0b0b;--line:#242424;--muted:#8c8c8c}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{background:var(--bg);color:#fff;font-family:Poppins,Arial,sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 78% 20%,#3b0000 0,transparent 27%),radial-gradient(circle at 15% 75%,#190006 0,transparent 30%)}
-body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.08;background:repeating-linear-gradient(0deg,transparent 0 3px,#fff 4px);mix-blend-mode:overlay}
-a{text-decoration:none;color:inherit}
-nav{height:74px;position:fixed;z-index:15;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:rgba(3,3,3,.72);border-bottom:1px solid #1d1d1d;backdrop-filter:blur(18px)}
-.brand{font:900 19px Orbitron;letter-spacing:2px}.brand i{color:var(--red);font-style:normal}
-.links a{font:600 11px Orbitron;color:#aaa;margin-left:28px;transition:.25s}.links a:hover{color:#fff}
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;padding:130px 8% 80px;overflow:hidden}
-.hero .orb{position:absolute;width:620px;height:620px;border:1px solid #401010;border-radius:50%;right:-240px;top:12%;box-shadow:0 0 120px #320000,inset 0 0 100px #190000}
-.hero .slash{position:absolute;width:65vw;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent);right:-15%;top:57%;transform:rotate(-24deg);box-shadow:0 0 18px var(--red)}
-.heroContent{max-width:900px;position:relative;z-index:2}
-.tag{font:700 11px Orbitron;letter-spacing:5px;color:#ff3838;margin-bottom:23px}
-h1{font:900 clamp(48px,10vw,112px)/.87 Orbitron;letter-spacing:-6px}
-h1 .red{color:var(--red);text-shadow:0 0 40px #780000}
-.heroText{max-width:650px;color:#999;font-size:16px;line-height:1.85;margin:29px 0}
-.cta{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 24px;border:1px solid #383838;font:700 11px Orbitron;letter-spacing:1px;transition:.3s}.btn.primary{background:var(--red);border-color:var(--red);box-shadow:0 0 30px #4b0000}.btn:hover{transform:translateY(-4px);box-shadow:0 14px 35px #450000}
-.socials{display:flex;gap:15px;margin-top:28px;color:#777;font-size:12px}.socials a:hover{color:#fff}
-section{padding:105px 8%}.eyebrow{font:700 10px Orbitron;letter-spacing:4px;color:#f22;margin-bottom:12px}.title{font:800 clamp(30px,5vw,58px) Orbitron;letter-spacing:-2px}.intro{color:#888;max-width:690px;line-height:1.8;margin-top:14px}
-.workGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:42px}
-.work{height:390px;border:1px solid #262626;position:relative;overflow:hidden;background:linear-gradient(135deg,#171717,#050505)}
-.work:before{content:"";position:absolute;inset:-40%;background:linear-gradient(120deg,transparent 38%,rgba(255,25,25,.38) 50%,transparent 62%);transform:translateX(-55%) rotate(4deg);transition:.7s}
-.work:hover:before{transform:translateX(55%) rotate(4deg)}
-.work:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.9)}
-.work:nth-child(2){background:radial-gradient(circle at 70% 25%,#430909,#0b0b0b 55%,#030303)}
-.work:nth-child(3){background:linear-gradient(145deg,#270000,#111 45%,#040404)}
-.workNum{position:absolute;top:18px;right:20px;color:#333;font:900 42px Orbitron;z-index:2}
-.workInfo{position:absolute;bottom:24px;left:25px;z-index:3}.workInfo h3{font:800 20px Orbitron}.workInfo p{color:#888;font-size:11px;margin-top:7px}
-.play{position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border:1px solid #777;border-radius:50%;display:grid;place-items:center;z-index:4;color:#fff}.play:after{content:"";border-left:10px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:4px}
-.aboutGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
-.panel{border:1px solid #282828;background:linear-gradient(145deg,#111,#060606);padding:35px;position:relative}
-.panel:before{content:"BAZIGAR";position:absolute;right:15px;bottom:4px;color:#171717;font:900 54px Orbitron}
-.stat{position:relative;z-index:1;padding:17px 0;border-bottom:1px solid #222;display:flex;justify-content:space-between;font-size:12px;color:#888}.stat b{color:#fff;font:700 11px Orbitron}.stat:last-child{border:0}
-.collab{border:1px solid #341111;background:radial-gradient(circle at 50% 0,#270000,#090606 45%,#050505);text-align:center;padding:75px 25px;position:relative;overflow:hidden}.collab .title{margin-bottom:12px}.collab p{max-width:650px;margin:0 auto 28px;color:#999;line-height:1.8}
-footer{border-top:1px solid #1d1d1d;padding:30px 8%;display:flex;justify-content:space-between;color:#666;font-size:11px}
-@media(max-width:800px){nav{padding:0 5%}.links{display:none}.hero{padding-left:7%;padding-right:7%}.hero .orb{width:420px;height:420px;right:-250px}.workGrid,.aboutGrid{grid-template-columns:1fr}.work{height:300px}section{padding:78px 7%}h1{letter-spacing:-3px}footer{display:block;text-align:center}footer div+div{margin-top:8px}}
+
+/* =========================
+   MAIN CSS
+========================= */
+
+:root{
+  --red:#ff2020;
+  --red2:#a90000;
+  --bg:#030303;
+  --card:#0b0b0b;
+  --line:#242424;
+  --muted:#8c8c8c
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  background:var(--bg);
+  color:#fff;
+  font-family:Poppins,Arial,sans-serif;
+  overflow-x:hidden
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+  radial-gradient(circle at 78% 20%,#3b0000 0,transparent 27%),
+  radial-gradient(circle at 15% 75%,#190006 0,transparent 30%)
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:20;
+  opacity:.08;
+  background:repeating-linear-gradient(
+    0deg,
+    transparent 0 3px,
+    #fff 4px
+  );
+  mix-blend-mode:overlay
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+/* NAV */
+
+nav{
+  height:74px;
+  position:fixed;
+  z-index:15;
+  inset:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 7%;
+  background:rgba(3,3,3,.72);
+  border-bottom:1px solid #1d1d1d;
+  backdrop-filter:blur(18px)
+}
+
+.brand{
+  font:900 19px Orbitron;
+  letter-spacing:2px
+}
+
+.brand i{
+  color:var(--red);
+  font-style:normal
+}
+
+.links a{
+  font:600 11px Orbitron;
+  color:#aaa;
+  margin-left:28px;
+  transition:.25s
+}
+
+.links a:hover{
+  color:#fff;
+  transform:translateY(-2px)
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:130px 8% 80px;
+  overflow:hidden
+}
+
+.hero .orb{
+  position:absolute;
+  width:620px;
+  height:620px;
+  border:1px solid #401010;
+  border-radius:50%;
+  right:-240px;
+  top:12%;
+  box-shadow:
+    0 0 120px #320000,
+    inset 0 0 100px #190000;
+  animation:orbPulse 5s ease-in-out infinite
+}
+
+@keyframes orbPulse{
+  0%,100%{
+    transform:scale(1);
+    opacity:.8
+  }
+  50%{
+    transform:scale(1.05);
+    opacity:1
+  }
+}
+
+.hero .slash{
+  position:absolute;
+  width:65vw;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--red),
+    transparent
+  );
+  right:-15%;
+  top:57%;
+  transform:rotate(-24deg);
+  box-shadow:0 0 18px var(--red);
+  animation:slashMove 4s ease-in-out infinite
+}
+
+@keyframes slashMove{
+  0%,100%{
+    opacity:.4
+  }
+  50%{
+    opacity:1
+  }
+}
+
+.heroContent{
+  max-width:900px;
+  position:relative;
+  z-index:2;
+  animation:heroContent 1s ease-out
+}
+
+@keyframes heroContent{
+  from{
+    opacity:0;
+    transform:translateY(35px)
+  }
+  to{
+    opacity:1;
+    transform:translateY(0)
+  }
+}
+
+.tag{
+  font:700 11px Orbitron;
+  letter-spacing:5px;
+  color:#ff3838;
+  margin-bottom:23px
+}
+
+h1{
+  font:900 clamp(48px,10vw,112px)/.87 Orbitron;
+  letter-spacing:-6px
+}
+
+h1 .red{
+  color:var(--red);
+  text-shadow:0 0 40px #780000
+}
+
+.heroText{
+  max-width:650px;
+  color:#999;
+  font-size:16px;
+  line-height:1.85;
+  margin:29px 0
+}
+
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
+}
+
+.btn{
+  padding:15px 24px;
+  border:1px solid #383838;
+  font:700 11px Orbitron;
+  letter-spacing:1px;
+  transition:.3s;
+  display:inline-block
+}
+
+.btn.primary{
+  background:var(--red);
+  border-color:var(--red);
+  box-shadow:0 0 30px #4b0000
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 35px #450000
+}
+
+.btn.primary:hover{
+  background:#d91515
+}
+
+.socials{
+  display:flex;
+  gap:15px;
+  margin-top:28px;
+  color:#777;
+  font-size:12px
+}
+
+.socials a{
+  transition:.25s
+}
+
+.socials a:hover{
+  color:#fff;
+  transform:translateY(-2px)
+}
+
+/* SECTIONS */
+
+section{
+  padding:105px 8%
+}
+
+.eyebrow{
+  font:700 10px Orbitron;
+  letter-spacing:4px;
+  color:#f22;
+  margin-bottom:12px
+}
+
+.title{
+  font:800 clamp(30px,5vw,58px) Orbitron;
+  letter-spacing:-2px
+}
+
+.intro{
+  color:#888;
+  max-width:690px;
+  line-height:1.8;
+  margin-top:14px
+}
+
+/* WORK */
+
+.workGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
+  margin-top:42px
+}
+
+.work{
+  height:390px;
+  border:1px solid #262626;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#171717,#050505);
+  transition:.4s
+}
+
+.work:hover{
+  transform:translateY(-8px);
+  border-color:#551111;
+  box-shadow:0 18px 45px rgba(255,0,0,.12)
+}
+
+.work:before{
+  content:"";
+  position:absolute;
+  inset:-40%;
+  background:linear-gradient(
+    120deg,
+    transparent 38%,
+    rgba(255,25,25,.38) 50%,
+    transparent 62%
+  );
+  transform:translateX(-55%) rotate(4deg);
+  transition:.7s
+}
+
+.work:hover:before{
+  transform:translateX(55%) rotate(4deg)
+}
+
+.work:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    transparent 35%,
+    rgba(0,0,0,.9)
+  )
+}
+
+.work:nth-child(2){
+  background:radial-gradient(
+    circle at 70% 25%,
+    #430909,
+    #0b0b0b 55%,
+    #030303
+  )
+}
+
+.work:nth-child(3){
+  background:linear-gradient(
+    145deg,
+    #270000,
+    #111 45%,
+    #040404
+  )
+}
+
+.workNum{
+  position:absolute;
+  top:18px;
+  right:20px;
+  color:#333;
+  font:900 42px Orbitron;
+  z-index:2
+}
+
+.workInfo{
+  position:absolute;
+  bottom:24px;
+  left:25px;
+  z-index:3
+}
+
+.workInfo h3{
+  font:800 20px Orbitron
+}
+
+.workInfo p{
+  color:#888;
+  font-size:11px;
+  margin-top:7px
+}
+
+.play{
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:58px;
+  height:58px;
+  border:1px solid #777;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  z-index:4;
+  color:#fff;
+  transition:.3s
+}
+
+.work:hover .play{
+  border-color:var(--red);
+  box-shadow:0 0 25px rgba(255,32,32,.4);
+  transform:translate(-50%,-50%) scale(1.08)
+}
+
+.play:after{
+  content:"";
+  border-left:10px solid #fff;
+  border-top:6px solid transparent;
+  border-bottom:6px solid transparent;
+  margin-left:4px
+}
+
+/* ABOUT */
+
+.aboutGrid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:55px;
+  align-items:center
+}
+
+.panel{
+  border:1px solid #282828;
+  background:linear-gradient(145deg,#111,#060606);
+  padding:35px;
+  position:relative;
+  overflow:hidden
+}
+
+.panel:before{
+  content:"BAZIGAR";
+  position:absolute;
+  right:15px;
+  bottom:4px;
+  color:#171717;
+  font:900 54px Orbitron
+}
+
+.stat{
+  position:relative;
+  z-index:1;
+  padding:17px 0;
+  border-bottom:1px solid #222;
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#888
+}
+
+.stat b{
+  color:#fff;
+  font:700 11px Orbitron
+}
+
+.stat:last-child{
+  border:0
+}
+
+/* COLLAB */
+
+.collab{
+  border:1px solid #341111;
+  background:radial-gradient(
+    circle at 50% 0,
+    #270000,
+    #090606 45%,
+    #050505
+  );
+  text-align:center;
+  padding:75px 25px;
+  position:relative;
+  overflow:hidden
+}
+
+.collab .title{
+  margin-bottom:12px
+}
+
+.collab p{
+  max-width:650px;
+  margin:0 auto 28px;
+  color:#999;
+  line-height:1.8
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid #1d1d1d;
+  padding:30px 8%;
+  display:flex;
+  justify-content:space-between;
+  color:#666;
+  font-size:11px
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  nav{
+    padding:0 5%
+  }
+
+  .links{
+    display:none
+  }
+
+  .hero{
+    padding-left:7%;
+    padding-right:7%
+  }
+
+  .hero .orb{
+    width:420px;
+    height:420px;
+    right:-250px
+  }
+
+  .workGrid,
+  .aboutGrid{
+    grid-template-columns:1fr
+  }
+
+  .work{
+    height:300px
+  }
+
+  section{
+    padding:78px 7%
+  }
+
+  h1{
+    letter-spacing:-3px
+  }
+
+  footer{
+    display:block;
+    text-align:center
+  }
+
+  footer div+div{
+    margin-top:8px
+  }
+}
+
+@media(max-width:430px){
+
+  nav{
+    height:65px
+  }
+
+  .brand{
+    font-size:16px
+  }
+
+  .links{
+    display:none
+  }
+
+  .hero{
+    padding-top:100px
+  }
+
+  h1{
+    font-size:42px
+  }
+
+  .small-title{
+    font-size:10px;
+    letter-spacing:3px
+  }
+
+  .heroText{
+    font-size:14px
+  }
+
+  .btn{
+    width:100%;
+    text-align:center
+  }
+}
+
 </style>
 </head>
+
 <body>
+
+<!-- NAVIGATION -->
+
 <nav>
-<div class="brand">BAZIGAR <i>EDITZ</i></div>
-<div class="links"><a href="#home">HOME</a><a href="#work">EDITS</a><a href="#about">ABOUT</a><a href="#collab">COLLAB</a></div>
+  <div class="brand">
+    BAZIGAR <i>EDITZ</i>
+  </div>
+
+  <div class="links">
+    <a href="#home">HOME</a>
+    <a href="#work">EDITS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#collab">COLLAB</a>
+  </div>
 </nav>
 
+
+<!-- HERO -->
+
 <header class="hero" id="home">
-<div class="orb"></div><div class="slash"></div>
-<div class="heroContent">
-<div class="tag">GAMING EDITOR • CINEMATIC CREATOR</div>
-<h1>BAZIGAR<br><span class="red">EDITZ.</span></h1>
-<p class="heroText">Welcome to BAZIGAR EDITZ — where gaming moments become cinematic. Expect hard-hitting transitions, beat-sync edits, insane highlights and visuals built to stand out.</p>
-<div class="cta"><a class="btn primary" href="#work">WATCH THE EDITS</a><a class="btn" href="#collab">START A COLLAB</a></div>
-<div class="socials"><a href="https://www.youtube.com/@androidplayergaming" target="_blank">▶ YOUTUBE</a><a href="https://www.instagram.com/singhalmayank309?stkn=MXFmOGlxcjlnZ28yaw==" target="_blank">◎ INSTAGRAM</a></div>
-</div>
+
+  <div class="orb"></div>
+  <div class="slash"></div>
+
+  <div class="heroContent">
+
+    <div class="tag">
+      GAMING EDITOR • CINEMATIC CREATOR
+    </div>
+
+    <h1>
+      BAZIGAR<br>
+      <span class="red">EDITZ.</span>
+    </h1>
+
+    <p class="heroText">
+      Welcome to BAZIGAR EDITZ — where gaming moments become cinematic.
+      Expect hard-hitting transitions, beat-sync edits, insane highlights
+      and visuals built to stand out.
+    </p>
+
+    <div class="cta">
+      <a
+        class="btn primary"
+        href="#work"
+      >
+        WATCH THE EDITS
+      </a>
+
+      <a
+        class="btn"
+        href="#collab"
+      >
+        START A COLLAB
+      </a>
+    </div>
+
+    <div class="socials">
+
+      <a
+        href="https://www.youtube.com/@androidplayergaming"
+        target="_blank"
+        rel="noopener"
+      >
+        ▶ YOUTUBE
+      </a>
+
+      <a
+        href="https://www.instagram.com/singhalmayank309?stkn=MXFmOGlxcjlnZ28yaw=="
+        target="_blank"
+        rel="noopener"
+      >
+        ◎ INSTAGRAM
+      </a>
+
+    </div>
+
+  </div>
 </header>
 
+
+<!-- WORK -->
+
 <section id="work">
-<div class="eyebrow">01 / SELECTED WORK</div><div class="title">THE EDIT VAULT</div>
-<p class="intro">A showcase area for your strongest gaming edits. Replace these cards with your actual YouTube videos or Shorts.</p>
-<div class="workGrid">
-<div class="work"><div class="workNum">01</div><div class="play"></div><div class="workInfo"><h3>BEAT SYNC</h3><p>FAST CUTS / IMPACT / RHYTHM</p></div></div>
-<div class="work"><div class="workNum">02</div><div class="play"></div><div class="workInfo"><h3>CINEMATIC MONTAGE</h3><p>STORY / GAMEPLAY / ATMOSPHERE</p></div></div>
-<div class="work"><div class="workNum">03</div><div class="play"></div><div class="workInfo"><h3>CLUTCH HIGHLIGHTS</h3><p>ENERGY / EFFECTS / FLOW</p></div></div>
-</div>
+
+  <div class="eyebrow reveal">
+    01 / SELECTED WORK
+  </div>
+
+  <div class="title reveal">
+    THE EDIT VAULT
+  </div>
+
+  <p class="intro reveal">
+    A showcase area for your strongest gaming edits.
+    Replace these cards with your actual YouTube videos or Shorts.
+  </p>
+
+  <div class="workGrid">
+
+    <div class="work reveal">
+      <div class="workNum">01</div>
+      <div class="play"></div>
+
+      <div class="workInfo">
+        <h3>BEAT SYNC</h3>
+        <p>FAST CUTS / IMPACT / RHYTHM</p>
+      </div>
+    </div>
+
+    <div class="work reveal">
+      <div class="workNum">02</div>
+      <div class="play"></div>
+
+      <div class="workInfo">
+        <h3>CINEMATIC MONTAGE</h3>
+        <p>STORY / GAMEPLAY / ATMOSPHERE</p>
+      </div>
+    </div>
+
+    <div class="work reveal">
+      <div class="workNum">03</div>
+      <div class="play"></div>
+
+      <div class="workInfo">
+        <h3>CLUTCH HIGHLIGHTS</h3>
+        <p>ENERGY / EFFECTS / FLOW</p>
+      </div>
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section id="about">
-<div class="aboutGrid">
-<div><div class="eyebrow">02 / ABOUT</div><div class="title">MADE TO HIT DIFFERENT.</div>
-<p class="intro">BAZIGAR EDITZ is a gaming-editing brand focused on turning raw gameplay into edits that feel fast, cinematic and memorable. Add your own creator story here later — this section is already structured for it.</p></div>
-<div class="panel">
-<div class="stat"><span>STYLE</span><b>CINEMATIC GAMING</b></div>
-<div class="stat"><span>CONTENT</span><b>EDITS / MONTAGES</b></div>
-<div class="stat"><span>COLLABS</span><b>OPEN</b></div>
-<div class="stat"><span>PLATFORM</span><b>YOUTUBE + INSTAGRAM</b></div>
-</div>
-</div>
+
+  <div class="aboutGrid">
+
+    <div class="reveal">
+
+      <div class="eyebrow">
+        02 / ABOUT
+      </div>
+
+      <div class="title">
+        MADE TO HIT DIFFERENT.
+      </div>
+
+      <p class="intro">
+        BAZIGAR EDITZ is a gaming-editing brand focused on turning
+        raw gameplay into edits that feel fast, cinematic and memorable.
+        Add your own creator story here later — this section is already
+        structured for it.
+      </p>
+
+    </div>
+
+    <div class="panel reveal">
+
+      <div class="stat">
+        <span>STYLE</span>
+        <b>CINEMATIC GAMING</b>
+      </div>
+
+      <div class="stat">
+        <span>CONTENT</span>
+        <b>EDITS / MONTAGES</b>
+      </div>
+
+      <div class="stat">
+        <span>COLLABS</span>
+        <b>OPEN</b>
+      </div>
+
+      <div class="stat">
+        <span>PLATFORM</span>
+        <b>YOUTUBE + INSTAGRAM</b>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- COLLAB -->
 
 <section id="collab">
-<div class="collab"><div class="eyebrow">03 / COLLABORATE</div><div class="title">GOT A VISION?</div>
-<p>Need a gaming edit, montage, promotion or creative collaboration? Send the idea and let's turn the footage into something worth watching.</p>
-<div class="cta" style="justify-content:center">
-<a class="btn primary" href="https://www.instagram.com/singhalmayank309?stkn=MXFmOGlxcjlnZ28yaw==" target="_blank">DM ON INSTAGRAM</a>
-<a class="btn" href="https://www.youtube.com/@androidplayergaming" target="_blank">VISIT YOUTUBE</a>
-</div></div>
+
+  <div class="collab reveal">
+
+    <div class="eyebrow">
+      03 / COLLABORATE
+    </div>
+
+    <div class="title">
+      GOT A VISION?
+    </div>
+
+    <p>
+      Need a gaming edit, montage, promotion or creative collaboration?
+      Send the idea and let's turn the footage into something worth watching.
+    </p>
+
+    <div class="cta" style="justify-content:center">
+
+      <a
+        class="btn primary"
+        href="https://www.instagram.com/singhalmayank309?stkn=MXFmOGlxcjlnZ28yaw=="
+        target="_blank"
+        rel="noopener"
+      >
+        DM ON INSTAGRAM
+      </a>
+
+      <a
+        class="btn"
+        href="https://www.youtube.com/@androidplayergaming"
+        target="_blank"
+        rel="noopener"
+      >
+        VISIT YOUTUBE
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
 
-<footer><div>© 2026 BAZIGAR EDITZ</div><div>EDIT. CREATE. DOMINATE.</div></footer>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div>
+    © 2026 BAZIGAR EDITZ
+  </div>
+
+  <div>
+    EDIT. CREATE. DOMINATE.
+  </div>
+
+</footer>
+
+
+<!-- SCROLL REVEAL SCRIPT -->
+
+<script>
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add("show");
+
+        observer.unobserve(entry.target);
+
+      }
+
+    });
+
+  },
+  {
+    threshold: 0.12
+  }
+);
+
+revealElements.forEach((element) => {
+  observer.observe(element);
+});
+
+</script>
+
 </body>
-</html>
+    </html>
