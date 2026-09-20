@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://singhalmayank306.github.io/Bazigar-editz-/sitemap.xml
