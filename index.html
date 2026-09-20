@@ -12,8 +12,118 @@
 <meta name="author" content="Mayank Agrawal">
 <meta name="robots" content="index, follow">
 
-<style>
+<style> 
+/* ===== BAZIGAR PREMIUM UPGRADE ===== */
 
+body {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 32, 32, 0.12), transparent 28%),
+    radial-gradient(circle at 85% 70%, rgba(169, 0, 0, 0.10), transparent 30%),
+    #030303;
+}
+
+/* Premium glow behind hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: rgba(255, 20, 20, 0.13);
+  filter: blur(100px);
+  border-radius: 50%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Stronger main title */
+.hero h1 {
+  text-shadow:
+    0 0 10px rgba(255, 32, 32, 0.55),
+    0 0 30px rgba(255, 32, 32, 0.25);
+  letter-spacing: -2px;
+}
+
+/* Better buttons */
+.btn {
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 30px rgba(255, 32, 32, 0.30),
+    0 0 15px rgba(255, 32, 32, 0.20);
+}
+
+/* Premium work cards */
+.work-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255, 32, 32, 0.08),
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  transition: transform .6s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 32, 32, 0.65);
+  box-shadow: 0 15px 40px rgba(255, 32, 32, 0.14);
+}
+
+.work-card:hover::before {
+  transform: translateX(100%);
+}
+
+/* Navbar glow */
+.navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Brand glow */
+.brand {
+  text-shadow: 0 0 12px rgba(255, 32, 32, 0.35);
+}
+
+.brand i {
+  text-shadow: 0 0 15px rgba(255, 32, 32, 0.65);
+}
+
+/* Section headings */
+section h2 {
+  text-shadow: 0 0 20px rgba(255, 32, 32, 0.18);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .hero::before {
+    width: 280px;
+    height: 280px;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
 
 /* =========================
