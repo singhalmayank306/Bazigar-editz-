@@ -14,6 +14,33 @@
 
 
 <style>
+  /* Smooth page animation */
+body {
+  animation: pageLoad 0.8s ease-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button and link animation */
+a,
+button {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+a:hover,
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
 :root{--red:#ff2020;--red2:#a90000;--bg:#030303;--card:#0b0b0b;--line:#242424;--muted:#8c8c8c}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
