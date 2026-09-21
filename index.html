@@ -785,122 +785,14 @@ footer:hover{
   }
 
   }
-  /* WELCOME SCREEN */
-#welcomeScreen{
-  position:fixed;
-  inset:0;
-  z-index:9999;
-  background:#030303;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  overflow:hidden;
-  animation:welcomeExit 1s ease 2.2s forwards;
-}
-
-#welcomeScreen:before{
-  content:"";
-  position:absolute;
-  width:500px;
-  height:500px;
-  border:1px solid #400000;
-  border-radius:50%;
-  box-shadow:0 0 100px #350000;
-  animation:welcomePulse 1.8s ease-in-out infinite;
-}
-
-.welcomeContent{
-  position:relative;
-  z-index:2;
-  animation:welcomeEnter 1s ease forwards;
-}
-
-.welcomeSmall{
-  font:700 10px Orbitron;
-  letter-spacing:5px;
-  color:#ff3030;
-  margin-bottom:18px;
-}
-
-.welcomeTitle{
-  font:900 clamp(42px,10vw,90px) Orbitron;
-  letter-spacing:-4px;
-}
-
-.welcomeTitle span{
-  color:var(--red);
-  text-shadow:0 0 35px #780000;
-}
-
-.welcomeLine{
-  width:120px;
-  height:1px;
-  background:var(--red);
-  margin:22px auto 0;
-  box-shadow:0 0 15px var(--red);
-}
-
-@keyframes welcomeEnter{
-  from{
-    opacity:0;
-    transform:scale(.92);
   }
-  to{
-    opacity:1;
-    transform:scale(1);
-  }
-}
 
-@keyframes welcomePulse{
-  0%,100%{
-    transform:scale(.9);
-    opacity:.35;
-  }
-  50%{
-    transform:scale(1.05);
-    opacity:.7;
-  }
-}
 
-@keyframes welcomeExit{
-  0%{
-    opacity:1;
-    visibility:visible;
-  }
-  80%{
-    opacity:0;
-  }
-  100%{
-    opacity:0;
-    visibility:hidden;
-    pointer-events:none;
-  }
-}
 </style>
 </head>
 
 <body>
 
-<!-- WELCOME SCREEN -->
-<div id="welcomeScreen">
-  <div class="welcomeContent">
-    <div class="welcomeSmall">WELCOME TO</div>
-
-    <div class="welcomeTitle">
-      BAZIGAR <span>EDITZ</span>
-    </div>
-
-    <div class="welcomeLine"></div>
-  </div>
-</div>
-
-<!-- NAVIGATION -->
-<nav>
-
-<!-- NAVIGATION -->
-
-<nav>
 
   <div class="brand">
     BAZIGAR <i>EDITZ</i>
